@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>theJourny</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="header-container">
+        <a class="nav-logo" href="/index.html"
+          ><img
+            width="200"
+            src="static\theJourny-typelogo-black.svg"
+            alt="theJourny-logo"
+        /></a>
+        <nav class="nav-menu">
+            <button class="ham-icon" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <svg viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="menu-box">
+        <div class="menu-container">
+          <h3>Menu</h3>
+          <ul>
+            <li>Work</li>
+            <li>Services</li>
+            <li>theJournal</li>
+            <li>Contact</li>
+          </ul>
+          <div class="box-email-container">
+            <span>Get in touch</span>
+            <a href="">info@thejourny.com</a>
+          </div>
+    </header>
+
+    <!--SWUP MAIN CONTAINER-->
+    <main id="swup" class="transition-fade">
+      <!--HERO SECTION-->
+      <section>
+        <div class="hero-section section-container">
+          <div class="hero-section-left">
+            <h1>Hi, my name is <br /><strong>Andrés Blanco</strong></h1>
+            <h3>
+              I'm a freelance Wordpress web developer from Valencia, Spain.
+            </h3>
+          </div>
+          <div class="hero-section-right">
+            <img src="static\cellphone-video.png" alt="grey ellipse" />
+          </div>
+        </div>
+      </section>
+
+      <!--CTA SECTION-->
+      <section>
+        <div class="cta-section section-container">
+          <div class="cta-section-left">
+            <h2>Let's work together</h2>
+            <h4>
+              I build well designed, functional and marketing oriented websites.
+            </h4>
+            <a href=""><button class="ctaBtn">Let's talk</button></a>
+          </div>
+          <div class="cta-section-right">
+            <img src="static\pc-mockup.png" alt="pc mockup" />
+          </div>
+        </div>
+      </section>
+
+      <!--PROJECTS SECTION-->
+      <section class="projects-section">
+        <div class="section-container">
+          <h2>Featured projects</h2>
+          <div class="projectsContainer">
+            <div class="nomadictProject project-card">
+              <img src="static/image 1.png" alt="image 1" />
+              <div class="projectInfo">
+                <h4>Nomadict</h4>
+                <p>
+                  A photography media company that empowers the professional
+                  growth of visual creators.
+                </p>
+                <a href="#"
+                  ><button class="demoBtn">view live website</button></a
+                >
+              </div>
+            </div>
+            <div class="aiDielmoProject project-card">
+              <img src="static/image 1.png" alt="image 1" />
+              <div class="projectInfo">
+                <h4>ai.Dielmo</h4>
+                <p>
+                  Software designed to detect objects through artificial
+                  intelligence.
+                </p>
+                <a href="#"
+                  ><button class="demoBtn">view live website</button></a
+                >
+              </div>
+            </div>
+            <div class="ohmybondsProject project-card">
+              <img src="static/image 1.png" alt="image 1" />
+              <div class="projectInfo">
+                <h4>Ohmybonds</h4>
+                <p>
+                  Website designed to provide information and assistance on
+                  alternative relational styles.
+                </p>
+                <a href="#"
+                  ><button class="demoBtn">view live website</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--ABOUT SECTION-->
+      <section>
+        <div class="about-section section-container">
+          <div class="about-section-left">
+            <img src="static\cellphone-video.png" alt="grey ellipse" />
+          </div>
+          <div class="about-section-right">
+            <h2>About me</h2>
+            <h4>
+              <strong>My passion is web design and problem solving.</strong
+              ><br />I mix both to provide high quality websites that will
+              achieve your goals.
+            </h4>
+            <a href=""><button class="ctaBtn">Lets talk!</button></a>
+          </div>
+        </div>
+      </section>
+
+      <!--FOOTER-->
+      <footer>
+        <div class="footer-main-container">
+          <div class="footer-left">
+            <h3>Have an idea? <br /><strong>Tell me about it</strong></h3>
+            <form>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+              <input class="submitButton" type="submit" value="submit" />
+            </form>
+          </div>
+          <div class="footer-right">
+            <h3>Follow me on<br /><strong>social media</strong></h3>
+            <div class="social-links">
+              <a href="">Linkedin</a>
+              <a href="">Youtube</a>
+              <a href="">Instagram</a>
+            </div>
+            <div class="contact-info">
+              <p><strong>info@thejourny.com</strong></p>
+              <p>Calle Bachiller 12, p7 <br />Valencia, 46010, SPAIN</p>
+            </div>
+            <small><a href="#">Privacy policy</a></small>
+          </div>
+        </div>
+        <small class="copyright">© 2022 theJourny</small>
+      </footer>
+    </main>
+    <div class="scrollbar-track scrollbar-track-x" style="display: none;"><div class="scrollbar-thumb scrollbar-thumb-x" style="width: 1257px; transform: translate3d(0px, 0px, 0px);"></div></div>
+  </body>
+</html>
